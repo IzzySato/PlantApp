@@ -1,0 +1,38 @@
+﻿@model IEnumerable<PlantApp.Models.Grass>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="titleDiv">
+    <h1 class="pageTitle">Grass</h1>
+    <a class="newA" asp-action="Create">Create New</a>
+</div>
+
+<form class="searchForm"  asp-action="ShowSearchResult">
+    <div class="searchInputs">
+        <label for="SearchPhrase" class="control-label"></label>
+        <input name="SearchPhrase" class="form-control"/>
+    </div>
+    <button class="searchBtn" type="submit"><i class="fas fa-search"></i></button>
+</form>
+
+@foreach (var item in Model) {
+    <div class="grassGridDiv pIndexDiv">
+        <div class="gImgDiv">
+            <img class="gImg pIndexImg" alt="@item.Image" src="~/images/@item.Image"    
+                        asp-append-version="true" />
+        </div>
+        <div class="gName pName">
+            @Html.DisplayFor(modelItem => item.Name)
+        </div>
+        <div class="gDesc pDesc">
+            @Html.DisplayFor(modelItem => item.Description)
+        </div>
+
+        <div class="gEdit pEdit">
+            <a class="editDetailDelete" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+            <a class="editDetailDelete" asp-action="Details" asp-route-id="@item.Id">Details</a>
+            <a class="editDetailDelete" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+        </div>
+    </div>
+ }

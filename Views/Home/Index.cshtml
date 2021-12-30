@@ -1,0 +1,89 @@
+﻿@model PlantApp.Models.MergeModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Garden App</h1>
+    <img class="mainLogo" src="~/images/logo/garden.svg" />
+
+    <form class="searchForm"  asp-action="ShowSearchResult">
+        <div class="searchInputs">
+            <label for="SearchPhrase" class="control-label"></label>
+            <input name="SearchPhrase" class="form-control"/>
+        </div>
+        <button class="searchBtn" type="submit"><i class="fas fa-search"></i></button>
+    </form>
+
+    <div class="indexPlantDiv">
+
+        <div class="indexFlowerDiv">
+            <h2 class="title">Flowers</h2>
+            @foreach (var item in Model.Flowers) {
+            <div class="indexPlant indexFlower">
+                <div class="indexPlantImgDiv">
+                    <img class="indexPlantImg" alt="@item.Name" src="~/images/@item.Image"
+                             asp-append-version="true" />
+                </div>
+                <div class="indexFlowerAnnual">
+                     @if(item.IsAnnual)
+                        {
+                            <text>Annual</text>
+                        } else
+                        {
+                            <text>Perennual</text>
+                        }
+                </div>
+                <div class="indexPlantName">
+                    @Html.DisplayFor(modelItem => item.Name)
+                </div>
+                <div class="indexPlantDesc">
+                    @Html.DisplayFor(modelItem => item.Description)
+                </div>
+            </div>
+             }
+        </div>
+
+        <div class="indexTreeDiv">
+            <h2 class="title">Tree</h2>
+            @foreach (var item in Model.Trees) {
+            <div class="indexPlant indexTree">
+                <div class="indexPlantImgDiv">
+                    <img class="indexPlantImg" alt="@item.Name" src="~/images/@item.Image"
+                             asp-append-version="true" />
+                </div>
+                <div class="heightTree">
+                    @Html.DisplayFor(modelItem => item.HeightFeet) <span> feet</span>
+                </div>
+                <div class="indexPlantName">
+                    @Html.DisplayFor(modelItem => item.Name)
+                </div>
+                <div class="indexPlantDesc">
+                    @Html.DisplayFor(modelItem => item.Description)
+                </div>
+            </div>
+             }
+        </div>
+
+        <div class="indexGrassDiv">
+            <h2 class="title">Grass</h2>
+            @foreach (var item in Model.Grasses) {
+            <div class="indexPlant indexGrass">
+                <div class="indexPlantImgDiv">
+                    <img class="indexPlantImg" alt="@item.Name" src="~/images/@item.Image"
+                             asp-append-version="true" />
+                </div>
+                <div class="indexPlantName">
+                    @Html.DisplayFor(modelItem => item.Name)
+                </div>
+                <div class="indexPlantDesc">
+                    @Html.DisplayFor(modelItem => item.Description)
+                </div>
+            </div>
+             }
+        </div>
+
+    </div>
+</div>
+

@@ -1,0 +1,108 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PlantApp
+build_property.RootNamespace = PlantApp
+build_property.ProjectDir = C:\web\projects\PlantApp\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\web\projects\PlantApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/web/projects/PlantApp/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/Flowers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvd2Vyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/Flowers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvd2Vyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/Flowers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvd2Vyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/Flowers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvd2Vyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/Flowers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvd2Vyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/Grasses/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Jhc3Nlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/Grasses/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Jhc3Nlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/Grasses/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Jhc3Nlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/Grasses/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Jhc3Nlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/Grasses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Jhc3Nlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/Trees/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/Trees/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/Trees/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/Trees/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/Trees/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/web/projects/PlantApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-y62fdyolr3

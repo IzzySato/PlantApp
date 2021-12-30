@@ -1,0 +1,35 @@
+﻿@model PlantApp.Models.Grass
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Grass Details</h1>
+
+<div>
+    <hr />
+    <dl class="">
+        <dd class = "">
+            <img class="pIndexImg" alt="grass image" src="/images/@Model.Image"/>
+        </dd>
+        <dt class = "">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class = "">
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

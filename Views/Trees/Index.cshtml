@@ -1,0 +1,42 @@
+﻿@model IEnumerable<PlantApp.Models.Tree>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="titleDiv">
+    <h1 class="pageTitle">Tree</h1>
+    <a class="newA" asp-action="Create">Create New</a>
+</div>
+
+<form class="searchForm"  asp-action="ShowSearchResult">
+    <div class="searchInputs">
+        <label for="SearchPhrase" class="control-label"></label>
+        <input name="SearchPhrase" class="form-control"/>
+    </div>
+    <button class="searchBtn" type="submit"><i class="fas fa-search"></i></button>
+</form>
+
+@foreach (var item in Model) {
+    <div class="treeGridDiv pIndexDiv">
+        <div class="tImgDiv">
+            <img class="tImg pIndexImg" alt="@item.Image" src="~/images/@item.Image"    
+                        asp-append-version="true" />
+        </div>
+        <div class="tName pName">
+            @Html.DisplayFor(modelItem => item.Name)
+        </div>
+        <div class="height">
+            @Html.DisplayFor(modelItem => item.HeightFeet) <span> feet</span>
+        </div>
+        <div class="tDesc pDesc">
+            @Html.DisplayFor(modelItem => item.Description)
+        </div>
+
+        <div class="tEdit pEdit">
+            <a class="editDetailDelete" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+            <a class="editDetailDelete" asp-action="Details" asp-route-id="@item.Id">Details</a>
+            <a class="editDetailDelete" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+        </div>
+    </div>
+ }

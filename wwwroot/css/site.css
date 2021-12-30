@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Condensed:wght@300&display=swap');
+
+:root {
+    --bg-color: #EEF8D4;
+    --font-black: #393A38;
+    --font-light: #F2F7EE;
+    --font-green: #61CB0B;
+    --btn-d-green: #5C8732;
+    --btn-m-green: #699844;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+    color: var(--font-black);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+a:hover {
+    color: var(--font-green);
+}
+
+input:focus, textarea:focus, select:focus, .form-control:focus {
+    outline: none;
+    border-color: black;
+    box-shadow: none;
+}
+
+.indexPlantDiv {
+    margin-top: 10%;
+    text-align: left;
+}
+
+.indexPlantImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#sLogo {
+    width: 10%;
+}
+
+.sImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+/* override boostrap */
+
+.form-floating {
+    margin-bottom: 13%;
+}
+
+.col-md-offset-2 {
+    margin-left: 5%;
+}
+
+.col-md-offset-2 section {
+    display: none;
+}
+
+.btn-primary {
+    background-color: var(--btn-d-green);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--btn-m-green);
+}
+
+/* Index */
+.title {
+    border-bottom: 1px solid black;
+    padding-bottom: 2%;
+}
+
+.indexPlant {
+    display: grid;
+    margin: 5% 0;
+    text-align: left;
+}
+
+.indexFlower {
+    grid-template-columns: 20% 15% auto;
+    grid-template-areas:
+        "name name name"
+        "img fAnnual desc";
+}
+
+.indexTree {
+    grid-template-columns: 20% auto;
+    grid-template-areas:
+        "name name"
+        "img desc"
+        "height desc";
+}
+
+.indexGrass {
+    grid-template-columns: 20% auto;
+    grid-template-areas:
+        "name name"
+        "img desc";
+}
+
+.indexPlantImgDiv {
+    grid-area: img;
+}
+
+.indexPlantName {
+    grid-area: name;
+    font-size: 1.4rem;
+    margin-bottom: 2%;
+}
+
+.indexFlowerAnnual {
+    grid-area: fAnnual;
+}
+
+.indexPlantDesc {
+    grid-area: desc;
+}
+
+.mainLogo {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.heightTree {
+    grid-area: height;
+    margin-top: 3%;
+}
+
+/* Plant Page Common */
+
+.titleDiv {
+    display: grid;
+    grid-template-columns: 16% auto;
+    margin: 5% 0;
+}
+
+.newA {
+    color: var(--font-light);
+    background-color: var(--btn-d-green);
+    border-radius: 10px;
+    width: 20%;
+    padding: 1% 3%;
+    text-align: center;
+}
+
+.newA:hover {
+    background-color: var(--btn-m-green);
+    color: var(--font-black);
+}
+
+.searchForm {
+    display: grid;
+    grid-template-areas: 
+        "sInput sBtn";
+    grid-template-columns: 70% auto;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.searchInputs {
+    grid-area: sInput;
+}
+
+
+.searchBtn {
+    top: 44%;
+    right: 91%;
+    grid-area: sBtn;
+    position: absolute;
+    border: none;
+    
+}
+
+.fa-search {
+    position: absolute;
+    font-size: 1.5rem;
+    position: absolute;
+    color: var(--btn-d-green);
+}
+
+.plantGridDiv {
+    display: grid;
+}
+
+.pName {
+    font-size: 1.8rem;
+    margin-bottom: 2%;
+}
+
+.pEdit a:first-child, .pEdit a:nth-child(2) {
+    margin-left: 1%;
+    padding-right: 8px;
+    border-right: 1px solid black;
+}
+
+.pIndexImg {
+    width: 33%;
+    border-radius: 10px;
+}
+
+/* Plant Common Create */
+
+.createDiv {
+    margin: 5% 0;
+}
+
+.createBody {
+    border-radius: 15px;
+}
+
+.createForm {
+    padding: 2%;
+}
+
+.createHead {
+    background-color: var(--btn-m-green);
+    color: var(--font-light);
+    padding: 2%;
+    
+}
+
+.createP {
+    margin-bottom: 3%;
+}
+
+.smallInput {
+    width: 40%;
+}
+
+.pIndexDiv {
+    display: grid;
+    grid-template-columns: 30% 30% auto;
+    margin: 10% 0;
+}
+
+/* Detail Common */
+
+.detailTitle {
+    margin: 11% 0 6% 0;
+}
+
+.detailDiv {
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+.detailImgDiv {
+    grid-area: detailImg;
+}
+
+.detailAnnualDiv {
+    grid-area: detailAnnual;
+    margin: 2% 0;
+    font-size: 1.4rem;
+}
+
+.detailDescDiv {
+    grid-area: detailDesc;
+    padding: 20% 0;
+}
+
+/* Flower Detail */
+
+.flowerDetail {
+    grid-template-areas: 
+        "detailImg detailDesc"
+        "detailAnnual detailDesc";
+}
+
+/* Edit Common */
+
+.editImg {
+    border-radius: 15px;
+    width: 30%;
+}
+
+.editImgDiv {
+    display: none;
+}
+
+.editDesc {
+    height: 60px;
+}
+
+.editForm {
+    margin-bottom: 3%;
+}
+
+/* Flower Index */
+.flowerGridDiv {
+    grid-template-areas:
+        "fName fName fName"
+        "fImg fDesc fEdit"
+        "annual annual annual";
+}
+
+.fImgDiv {
+    grid-area: fImg;
+}
+
+.fName {
+    grid-area: fName;
+}
+
+.fAnnual {
+    grid-area: annual;
+    margin-top: 2%;
+}
+
+.fDesc {
+    grid-area: fDesc;
+}
+
+.fEdit {
+    grid-area: fEdit;
+    text-align: right;
+}
+
+/* Tree Page*/
+
+.treeGridDiv {
+    grid-template-areas:
+        "tName tName tName"
+        "tImg tDesc tEdit"
+        "height height height";
+}
+
+.tName {
+    grid-area: tName;
+}
+
+.tImgDiv {
+    grid-area: tImg;
+}
+
+.height {
+    grid-area: height;
+    font-size: 1.4rem;
+    margin-top: 2%;
+}
+
+.tDesc {
+    grid-area: tDesc;
+}
+
+.tEdit {
+    grid-area: tEdit;
+    text-align: right;
+}
+
+/* Grass Page*/
+
+.grassGridDiv {
+    grid-template-columns: 40% 40% auto;
+    grid-template-areas:
+        "gName gName gName"
+        "gImg  gDesc gEdit";
+}
+
+.gName {
+    grid-area: gName;
+}
+
+.gImgDiv {
+    grid-area: gImg;
+}
+
+.gDesc {
+    grid-area: gDesc;
+}
+
+.gEdit {
+    grid-area: gEdit;
+    text-align: right;
+}
+
+@media (max-width: 900px) {
+    .newA {
+        width: 44%;
+        padding: 3%;
+    }
+    
+    .titleDiv {
+        grid-template-columns: 30% auto;
+    }
+    
+    .pIndexDiv {
+        grid-template-columns: 50% auto;
+    }
+
+    .flowerGridDiv {
+        grid-template-areas:
+            "fName fName"
+            "fImg fDesc"
+            "annual fDesc"
+            "fEdit fEdit";
+    }
+    .fEdit {
+        text-align: left;
+        margin: 3% 0 0 0;
+    }
+}
